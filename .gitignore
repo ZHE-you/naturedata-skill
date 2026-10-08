@@ -26,3 +26,6 @@ Thumbs.db
 # 临时文件
 *.tmp
 .cache/
+
+# 本地推送指引（不发布）
+PUSH_GUIDE.md
