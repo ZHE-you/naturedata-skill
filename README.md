@@ -1,10 +1,30 @@
-# paper-batch-pipeline
+# naturedata-skill
 
-> 批量论文自动化流水线 —— 输入论文 PDF / BibTeX / CSV 元数据，一次整理成汇总表、统计图表与中英对照摘要卡。
+> 面向学术写作的两个 WorkBuddy Skill：**批量文献整理** 与 **Nature 稿件组装**，可独立使用，也可串联成一条从原始文献到投稿稿件的流水线。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ZHE-you/paper-batch-pipeline/pulls)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ZHE-you/naturedata-skill/pulls)
+
+## 本仓库包含两个 Skill
+
+| Skill | 目录 | 作用 |
+|---|---|---|
+| **paper-batch-pipeline** | 仓库根目录 | 输入一批论文 PDF / BibTeX / CSV，清洗成汇总表、中英双语图表、中英对照摘要卡 |
+| **nature-manuscript-assembler** | [`manuscript-assembler/`](manuscript-assembler/) | 把上述产出组装成 Nature 投稿级稿件：16 项结构 + 素材注入 + 合规体检 + 审稿人质疑预判 |
+
+串联用法：
+
+```
+paper-batch-pipeline  ──►  nature-manuscript-assembler  ──►  nature-writing / nature-figure ...
+（清洗 / 图表 / 摘要卡）      （组装 + 素材注入 + 合规体检）      （逐节起草 / 配图 / 润色）
+```
+
+---
+
+# paper-batch-pipeline
+
+> 批量论文自动化流水线 —— 输入论文 PDF / BibTeX / CSV 元数据，一次整理成汇总表、统计图表与中英对照摘要卡。
 
 不是"读一篇论文"，而是把**一批论文**变成能直接写综述 / 开题的结构化素材。
 
